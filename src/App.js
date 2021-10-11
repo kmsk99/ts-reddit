@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import RedditCard from './components/RedditCard';
+import Subreddits from './components/Subreddits';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="bg-gray-50 grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 grid-rows-auto gap-5">
+            <Navbar />
+            <RedditCard />
+            <Subreddits />
+        </div>
+    );
 }
 
 export default App;
