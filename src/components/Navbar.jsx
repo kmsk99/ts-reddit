@@ -1,7 +1,7 @@
-function Navbar() {
+export default function Navbar() {
     return (
-        <nav className="col-start-1 lg:col-span-3 xl:col-span-4 grid-cols-3 w-full h-16 bg-white top-0 shadow-lg grid px-16 gap-2 items-center">
-            <div className="col-span-1 col-start-1 justify-self-start inline">
+        <nav className="flex sm:col-start-1 lg:col-span-3 xl:col-span-4 sm:grid-cols-3 w-full h-16 bg-white top-0 shadow-lg sm:grid px-16 gap-2 items-center">
+            <div className="flex sm:col-span-1 sm:col-start-1 sm:justify-self-start sm:inline">
                 <svg
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ function Navbar() {
                     </g>
                 </svg>
             </div>
-            <form class="text-gray-600 col-span-2 md:col-span-1 col-start-2 w-full h-12 flex items-center">
+            <form class="text-gray-600 sm:col-span-2 md:col-span-1 sm:col-start-2 w-full h-12 flex items-center">
                 <input
                     type="search"
                     name="serch"
@@ -86,5 +86,3 @@ function Navbar() {
         </nav>
     );
 }
-
-export default Navbar;

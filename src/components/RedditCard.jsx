@@ -1,8 +1,8 @@
-function RedditCard() {
+export default function RedditCard() {
     return (
-        <article className="col-start-1 lg:col-span-2 xl:col-span-3 row-start-2 bg-white shadow-lg p-5 mb-8 mx-5 lg:mr-0">
+        <article className="col-start-1 lg:col-span-2 xl:col-span-3 row-start-2 bg-white shadow-lg p-2.5 sm:p-5 mb-8 mx-5 lg:mr-0">
             <div className="flex">
-                <div className="flex-none w-16">
+                <div className="flex-none w-8 sm:w-16">
                     <form className="text-center mr-5">
                         <button className="up-vote">
                             <svg
@@ -79,5 +79,3 @@ function RedditCard() {
         </article>
     );
 }
-
-export default RedditCard;

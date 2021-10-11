@@ -1,4 +1,4 @@
-function Subreddits() {
+export default function Subreddits() {
     return (
         <aside className="hidden lg:block lg:grid-start-3 xl:grid-start-4 grid-span-1 row-start-2 bg-white shadow-lg p-5">
             <h2 className="text-2xl font-bold font-mono mb-2.5">Subreddits</h2>
@@ -27,5 +27,3 @@ function Subreddits() {
         </aside>
     );
 }
-
-export default Subreddits;
