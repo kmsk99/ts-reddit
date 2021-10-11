@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <nav className="flex sm:col-start-1 lg:col-span-3 xl:col-span-4 sm:grid-cols-3 w-full h-16 bg-white top-0 shadow-lg sm:grid px-16 gap-2 items-center">
+        <nav className="top-0 flex items-center w-full h-16 gap-2 px-16 bg-white shadow-lg sm:col-start-1 lg:col-span-3 xl:col-span-4 sm:grid-cols-3 sm:grid">
             <div className="flex sm:col-span-1 sm:col-start-1 sm:justify-self-start sm:inline">
                 <svg
                     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +20,7 @@ export default function Navbar() {
                 </svg>
                 <svg
                     xmlnsXlink="http://www.w3.org/1999/xlink"
-                    className="hidden md:inline w-16"
+                    className="hidden w-16 md:inline"
                     viewBox="0 0 57 18"
                     xmlns="http://www.w3.org/2000/svg"
                     width={57}
@@ -60,11 +60,11 @@ export default function Navbar() {
                     type="search"
                     name="serch"
                     placeholder="Search"
-                    className="bg-gray-200 h-8 px-4 py-2 w-full text-sm mr-2 flex-auto"
+                    className="flex-auto w-full h-8 px-4 py-2 mr-2 text-sm bg-gray-200"
                 />
-                <button type="submit" className="h-5 w-5 flex-none">
+                <button type="submit" className="flex-none w-5 h-5">
                     <svg
-                        className="h-5 w-5 fill-current"
+                        className="w-5 h-5 fill-current"
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
                         version="1.1"

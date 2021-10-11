@@ -3,11 +3,11 @@ export default function RedditCard() {
         <article className="col-start-1 lg:col-span-2 xl:col-span-3 row-start-2 bg-white shadow-lg p-2.5 sm:p-5 mb-8 mx-5 lg:mr-0">
             <div className="flex">
                 <div className="flex-none w-8 sm:w-16">
-                    <form className="text-center mr-5">
+                    <form className="mr-5 text-center">
                         <button className="up-vote">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
+                                className="w-6 h-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -24,7 +24,7 @@ export default function RedditCard() {
                         <button className="down-vote">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
+                                className="w-6 h-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -49,17 +49,17 @@ export default function RedditCard() {
                         alt="reddit-img"
                     />
                     <hr className="m-4" />
-                    <div className="flex justify-items-center items-center justify-between px-5">
-                        <p className="flex-none text-xs text-blue-900 font-mono font-bold">
+                    <div className="flex items-center justify-between px-5 justify-items-center">
+                        <p className="flex-none font-mono text-xs font-bold text-blue-900">
                             upload-name
                         </p>
-                        <p className="flex-none text-xs font-mono">
+                        <p className="flex-none font-mono text-xs">
                             8 hours-ago
                         </p>
-                        <button className="flex-none flex ">
+                        <button className="flex flex-none ">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-4 w-4 inline-block items-center"
+                                className="items-center inline-block w-4 h-4"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -69,7 +69,7 @@ export default function RedditCard() {
                                     style={{}}
                                 />
                             </svg>
-                            <p className="text-xs font-mono inline-block">
+                            <p className="inline-block font-mono text-xs">
                                 comment
                             </p>
                         </button>
